@@ -1,8 +1,18 @@
 <mat-card><mat-grid-list cols="2">
-<mat-grid-tile><p>form control here</p></mat-grid-tile>
-<mat-grid-tile><google-map class="googleMap" [height]="windowSize.height" [width]="windowSize.width" [options]="mapOptions">
+<mat-grid-tile>
+  <mat-card>
+    <mat-card-title>
+      Restaurants
+    </mat-card-title>
+    <mat-card-content><p>form control here</p></mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Load More</button>
+    </mat-card-actions>
+  </mat-card>
+  </mat-grid-tile>
+<mat-grid-tile><mat-card><google-map class="googleMap" [height]="windowSize.height" [width]="windowSize.width" [options]="mapOptions">
   <map-marker [position]="marker.position"></map-marker>
-</google-map></mat-grid-tile>
+</google-map></mat-card></mat-grid-tile>
 </mat-grid-list>
   </mat-card>
 

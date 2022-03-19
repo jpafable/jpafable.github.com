@@ -12,16 +12,17 @@ import { HttpClient } from '@angular/common/http';
 export class MapsComponent implements OnInit {
   mapOptions: google.maps.MapOptions = {
     center: { lat: 10.3094082, lng: 123.880070 },
-    zoom : 14
- }
- windowSize = {
-height : 500,
-width : 500
- };
- marker = {
+    zoom: 14
+  }
+
+  windowSize = {
+    height: "80vh",
+    width: "80vh"
+  };
+  marker = {
     position: { lat: 10.3094082, lng: 123.880070 },
- }
- infowindow = new google.maps.InfoWindow();
+  }
+  // infowindow = new google.maps.InfoWindow();
   // apiLoaded: Observable<boolean>;
   // constructor(httpClient: HttpClient) {
   //   this.apiLoaded = httpClient.jsonp('https://maps.googleapis.com/maps/api/js?key=AIzaSyBPnimh_J0Dfl9KyRtMrH-S_96gik5cP7o', 'callback')
@@ -30,7 +31,7 @@ width : 500
   //         catchError(() => of(false)),
   //       );
   // }
-  constructor() {}
+  constructor() { }
   ngOnInit(): void {
   }
 
