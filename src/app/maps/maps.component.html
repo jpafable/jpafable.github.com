@@ -1,3 +1,9 @@
-<mat-card><google-map></google-map></mat-card>
+<mat-card><mat-grid-list cols="2">
+<mat-grid-tile><p>form control here</p></mat-grid-tile>
+<mat-grid-tile><google-map class="googleMap" [height]="windowSize.height" [width]="windowSize.width" [options]="mapOptions">
+  <map-marker [position]="marker.position"></map-marker>
+</google-map></mat-grid-tile>
+</mat-grid-list>
+  </mat-card>
 
 
